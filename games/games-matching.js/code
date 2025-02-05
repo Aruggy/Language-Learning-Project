@@ -1,0 +1,23 @@
+function allowDrop(event) {
+    event.preventDefault();
+}
+
+function drag(event) {
+    event.dataTransfer.setData("text", event.target.id);
+}
+function drop(event, correctTranslation) {
+    event.preventDefault();
+    const draggedWord =document.getElementById(event.dataTransfer.getData("text")).textContent;
+    
+    if ((draggedWord === "Bonjour" && correctTranslation === "Hello!")||
+    (draggedWord === "Au revoir" && correctTranslation === "Goodbye!")||
+    (draggedWord === "S'il vous plaît" && correctTranslation === "Please")||
+    (draggedWord === "Merci" && correctTranslation === "Thank you")||
+    (draggedWord === "Oui" && correctTranslation === "Yes")||
+    (draggedWord === "Non" && correctTranslation === "No")) {
+        event.target.style.backgroundColor = "lightgreen";
+    }else{
+        event.target.style.backgroundColor = "red";
+    }
+
+}

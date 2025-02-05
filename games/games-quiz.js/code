@@ -1,0 +1,9 @@
+const correctAnswer ="Thank you";
+
+function checkAnswer(button) {
+    if (button.textContent === correctAnswer) {
+        document.getElementById("result").textContent = "Correct!";
+    } else {
+        document.getElementById("result").textContent = "Try Again!";
+    }
+}

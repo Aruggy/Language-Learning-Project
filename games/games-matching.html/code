@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2> Match the Spanish words to their English translations</h2>
+    <ul id="words">
+        <li draggable="true" ondragstart="drag(event)" id="word1">Adiós</li>
+        <li draggable="true" ondragstart="drag(event)" id="word2">Por favor</li>
+        <li draggable="true" ondragstart="drag(event)" id="word3">Gracias</li>
+        <li draggable="true" ondragstart="drag(event)" id="word4">Sí</li>
+        <li draggable="true" ondragstart="drag(event)" id="word5">No</li>
+    </ul>
+    <ul id="translations">
+        <li ondrop="drop(event, 'Goodbye!')" ondragover="allowDrop(event)">Goodbye!</li>
+        <li ondrop="drop(event, 'Please')" ondragover="allowDrop(event)">Please</li>
+        <li ondrop="drop(event, 'Thank you')" ondragover="allowDrop(event)">Thank you</li>
+        <li ondrop="drop(event, 'Yes')" ondragover="allowDrop(event)">Yes</li>
+        <li ondrop="drop(event, 'No')" ondragover="allowDrop(event)">No</li>
+    </ul>
+    <script src="games-matching.js"></script>
+</body>
+</html>

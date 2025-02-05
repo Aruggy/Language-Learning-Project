@@ -1,0 +1,24 @@
+const words +[
+    { french: "Bonjour", english: "Hello" },
+    { french: "Merci", english: "Thank you" },
+    { french: "Pomme", english: "Apple" }
+];
+
+let currentIndex = 0;
+let showingTranslation = false;
+
+function flipCard() {
+    const wordElement = document.getElementById("word");
+    if (showingTranslation) {
+        wordElement.textContent = words[currentIndex].french;
+    } else {
+        wordElement.textContent = words[currentIndex].english;
+    }
+    showingTranslation = !showingTranslation;
+}
+
+function nextCard() {
+    currentIndex = (currentIndex + 1) % words.length;
+    showingTranslation = false;
+    document.getElementById("word").textContent = words[currentIndex].french;
+}

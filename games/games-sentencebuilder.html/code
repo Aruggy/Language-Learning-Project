@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Rearrange the words to form a correct sentence</h2>
+    <div id="sentence">
+        <span class="word" draggable="true" ondragstart="drag(event)" id="word1">Bonjour</span>
+        <span class="word" draggable="true" ondragstart="drag(event)" id="word1">Je</span>
+        <span class="word" draggable="true" ondragstart="drag(event)" id="word1">Suis</span>
+        <span class="word" draggable="true" ondragstart="drag(event)" id="word1">John</span>
+    </div>
+    <div id="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>Drop here!</p>
+    </div>
+    <script src="sentence-builder.js"></script>
+</body>
+</html>
