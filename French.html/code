@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewpoint" content="width=device-width, initial-scale=1.0">
+        <title> French Language Games </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>French Language Games</h1>
+        </header>
+        <ul class="games-list">
+            <li><a href= "games/french-flashcards.html">Flashcards</a></li>
+            <li><a href= "games/french-quiz.html">Quiz Game</a></li>
+            <li><a href= "games/french-sentence builder.html">Sentence Builder</a></li>
+            <li><a href= "games/french-matching.html">Matching Game</a></li>
+        </ul>
+
+        <a href="index.html" class="back-button">Back to Homepage</a>
+
+
+    </body>
+    </html>

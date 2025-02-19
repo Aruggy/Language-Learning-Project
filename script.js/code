@@ -1,0 +1,5 @@
+document.getElementById("clickable-animal").addEventListener("click", function() {
+   alert("You clicked the animal! Now choose your path.");
+   // You can redirect to another page if needed:
+   // window.location.href = "choose-path.html";
+});
