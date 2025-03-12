@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <h1>WELCOME</h1>
+    </header>
+    <!--Image Section-->
+    <section class="image-container">
+        <div class="image-box">
+            <a href="french.html">
+                <img src="images/french frog.png"alt="French Language">
+            </a>
+            <div class="bubble">Learn French </div>
+        </div>
+        <div class="image-box">
+            <a href="spanish.html">
+                <img src="images/spanish snake.png"alt="Spanish Language">
+            </a>
+            <div class="bubble">Learn Spanish </div>
+        </div> 
+        <div class="image-box">
+            <a href="german.html">
+                <img src="images/German Goat.png"alt="German Language">
+            </a>
+            <div class="bubble">Learn German </div>
+        </div>
+    </section>
+    <!-- Clickable box--> 
+     <div class="click-box">
+        <p>Click on the animal to choose your path</p>
+        <img src ="images/animal.png" alt="Choose Path" id="clickable-animal">    
+    </div>
+
+     <script src="script.js"></script>
+</body>
+</html>
